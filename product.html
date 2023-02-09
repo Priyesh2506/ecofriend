@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EcoFriend</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: rgb(195, 239, 195);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #080200">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="
+            font-family: cursive;
+            font-size: xx-large;
+            font-style: italic;
+            font-weight: bolder;
+            color: rgb(86, 190, 88);
+          "
+        >
+          <img
+            src="images/6.png"
+            alt="Logo"
+            width="60"
+            height="45"
+            class="d-inline-block align-text-top"
+          />
+          EcoFriend
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="background-color: whitesmoke"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="home.html"
+                style="color: white"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html" style="color: white"
+                >Products</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="card text-center"
+      style="border-style: outset; margin: 10px; padding: 10px"
+    >
+      <div class="card-header">
+        <b
+          style="
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+          "
+        >
+          OUR PRODUCTS</b
+        >
+      </div>
+      <div class="card mb-3">
+        <img src="images/1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-size: x-small; text-align: left">
+            Product ID : <b id="p1">#P1</b>
+          </p>
+          <h5 class="card-title" id="pt1">Paper Cups</h5>
+          <p class="card-text">
+            Paper Cups are ideal for individual servings at all kinds of
+            parties, functions, picnic occasions, marriages, chat, tea & food
+            joints, etc.
+          </p>
+          <p class="card-text">
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              onclick="select1()"
+            >
+              <a class="nav-link" href="buying.html">Buy pack of 10 @ $<b id="pr1">1</b> </a>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="images/4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-size: x-small; text-align: left">
+            Product ID : <b id="p2">#P2</b>
+          </p>
+          <h5 class="card-title" id="pt2">Paper Bags</h5>
+          <p class="card-text">
+            Paper Bags carry a wide range of products from groceries, glass
+            bottles, clothing, books, toiletries, electronics and various other
+            goods and can also function as means of transport in day-to-day
+            activities.
+          </p>
+          <p class="card-text">
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              onclick="select2()"
+            >
+              <a class="nav-link" href="buying.html">Buy pack of 10 @ $<b id="pr2">2</b></a>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="images/2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-size: x-small; text-align: left">
+            Product ID : <b id="p3">#P3</b>
+          </p>
+          <h5 class="card-title" id="pt3">Bamboo ToothBrush</h5>
+          <p class="card-text">
+            Bamboo toothbrushes are environmentally friendly as the handles are
+            made from bamboo and are 100% biodegradable.This means, they can be
+            broken down naturally by themselves over time.
+          </p>
+          <p class="card-text">
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              onclick="select3()"
+            >
+              <a class="nav-link" href="buying.html">Buy pack of 2 @ $<b id="pr3">3</b></a>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="images/3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-size: x-small; text-align: left">
+            Product ID : <b id="p4">#P4</b>
+          </p>
+          <h5 class="card-title" id="pt4">Paper Plates</h5>
+          <p class="card-text">
+            Made from various paper-based materials, paper plates are
+            manufactured to be used for casual dinners, picnics, and any events
+            where the plate is to be discarded.
+          </p>
+          <p class="card-text">
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              onclick="select4()"
+            >
+              <a class="nav-link" href="buying.html">Buy pack of 20 @ $<b id="pr4">2</b></a>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img src="images/20.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p style="font-size: x-small; text-align: left">
+            Product ID : <b id="p5">#P5</b>
+          </p>
+          <h5 class="card-title" id="pt5">Clay Cups</h5>
+          <p class="card-text">
+            Drinking water from clay bottles helps to prevent acidity and other
+            gastric problems, but how? Clay has alkaline properties which mean
+            it retains higher PH levels (more than 7) and our body especially
+            our stomach is acidic in nature while clay has alkaline properties.
+          </p>
+          <p class="card-text">
+            <button
+              class="btn btn-outline-info"
+              type="button"
+              onclick="select5()"
+            >
+              <a class="nav-link" href="buying.html">Buy pack of 6 @ $<b id="pr5">15</b></a>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="card-body" style="background-color: lightgray">
+        <h5 class="card-title">Thank You!!</h5>
+        <p class="card-text">
+          For more information regarding our poratal and products, please
+          Contact Us.
+        </p>
+        <p class="card-text">
+          ecofriend.xxxx@mail.com OR +91928911xxxx
+        </p>
+      </div>
+      <div class="card-footer text-muted" style="text-align: left">
+        This page was last edited on 08 February 2023, at 22:00 (UTC)
+      </div>
+    </div>
+    <script src="select.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

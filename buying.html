@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EcoFriend</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: rgb(195, 239, 195);;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #080200">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: cursive;
+              font-size: xx-large;
+              font-style: italic;
+              font-weight: bolder;
+              color: rgb(86, 190, 88);
+            "
+          >
+            <img
+              src="images/6.png"
+              alt="Logo"
+              width="60"
+              height="45"
+              class="d-inline-block align-text-top"
+            />
+            EcoFriend
+          </a>
+        </div>
+      </nav>
+    <div
+      class="position-absolute top-50 start-50 translate-middle"
+      style="
+        width: 95%;
+        height: 85%;
+        border-style: outset;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        margin-top: 30px;
+        background-image: url(images/19.jpg);
+        background-repeat: no-repeat;
+      "
+    >
+      <h1
+        style="
+          text-align: center;
+          font-style: italic;
+          font-family:'Times New Roman', Times, serif;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: black;
+        "
+      >
+        <mark>Product Purchase</mark>
+      </h1>
+      <div class="d-grid gap-2">
+        <h5
+          style="
+            border-width: 100%;
+            border: 2px solid black;
+            text-align: left;
+            padding: 4px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 5px;
+            background-color: darksalmon;
+          "
+        >
+          Product ID : <b id="pid">1</b>
+        </h5>
+        <h5
+          style="
+            border-width: 100%;
+            border: 2px solid black;
+            text-align: left;
+            padding: 4px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 5px;
+            background-color: darksalmon;
+          "
+        >
+          Product Title : <b id="ptitle">Paper Cups</b>
+        </h5>
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label
+                for="inputText6"
+                class="col-form-label"
+                style="
+                  font-family:'Times New Roman', Times, serif;
+                  font-size: x-large;
+                  font-weight: bold;
+                  font-style: italic;
+                  margin-right:30px;
+                  color:black;
+                "
+                >Quantity</label
+              >
+            </div>
+            <div class="col-auto">
+              <input type="number" id="text1" class="form-control" placeholder="1" />
+            </div>
+          </div>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label
+              for="inputText6"
+              class="col-form-label"
+              style="
+                font-family:'Times New Roman', Times, serif;
+                  font-size: x-large;
+                  font-weight: bold;
+                  font-style: italic;
+                  color:black;
+              "
+              >Buyer Name</label
+            >
+          </div>
+          <div class="col-8">
+            <input type="text" id="text2" class="form-control" />
+          </div>
+        </div>
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label
+                for="inputText6"
+                class="col-form-label"
+                style="
+                  font-family:'Times New Roman', Times, serif;
+                  font-size: x-large;
+                  font-weight: bold;
+                  font-style: italic;
+                  margin-right:47px;
+                  color:black;
+                "
+                >Contact</label
+              >
+            </div>
+            <div class="col-8">
+              <input type="text" id="text3" class="form-control" />
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label
+                for="inputText6"
+                class="col-form-label"
+                style="
+                  font-family:'Times New Roman', Times, serif;
+                  font-size: x-large;
+                  font-weight: bold;
+                  font-style: italic;
+                  margin-right:46px;
+                  color:black;
+                "
+                >Address</label
+              >
+            </div>
+            <div class="col-8">
+                <textarea class="form-control" id="text4" rows="2"></textarea>
+            </div>
+          </div>
+          <div class="row g-3 align-items-center" style="margin-bottom: 10px;">
+            <div class="col-auto">
+              <label
+                for="inputText6"
+                class="col-form-label"
+                style="
+                  font-family:'Times New Roman', Times, serif;
+                  font-size: x-large;
+                  font-weight: bold;
+                  font-style: italic;
+                  margin-right:7px;
+                  color:black;
+                "
+                >Postal Code</label
+              >
+            </div>
+            <div class="col-8">
+                <input type="text" id="text5" class="form-control" />
+            </div>
+          </div>
+      </div>
+
+      <div class="d-grid gap-2">
+        
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          style="
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: large;
+          "
+        >
+        <a class="nav-link" href="lastpage.html" onclick="sold()">Buy @ $<b id="sale">1</b></a>
+        </button>
+      </div>
+      <div class="position-absolute bottom-0 start-0" style="margin: 15px">
+        <a class="nav-link" href="home.html"> <button type="button" class="btn btn-outline-danger">Back</button></a>
+      </div>
+    </div>
+    <script src="buy.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
